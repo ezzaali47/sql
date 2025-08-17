@@ -54,7 +54,7 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+If we capture customer addresses with Type 1 SCD, the address is simply overwritten when it changes, easy to manage, but no history is kept. With Type 2 SCD, each new address is stored as a new row with dates, so we keep full history. Type 1 is good if we only care about the current address, while Type 2 is better if we need to track past addresses (e.g., old shipping locations).
 ```
 
 ***
